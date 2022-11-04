@@ -33,7 +33,7 @@ end
 cd(sumdir);
 celldata(1,:) = [];
 clean_celldata = celldata;
-eccentric= find(clean_celldata(:,3)>0.90);
+eccentric= find(clean_celldata(:,3)>90);
 clean_celldata(eccentric,:)= [];
 
 summary_filename = ['ecc_MTSD_cleaned_cells','.csv'];
